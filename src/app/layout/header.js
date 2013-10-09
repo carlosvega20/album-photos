@@ -4,22 +4,22 @@ angular.module( 'albumPhotos.header', [
   'firebase'
 ])
 
-.controller( 'HeaderCtrl', function HeaderCtrl( $scope) {
+.controller( 'HeaderCtrl', function HeaderCtrl( $scope, $rootScope) {
 
     var url = "https://populardestinations.firebaseio.com/comments";
     var ref = new Firebase(url);
-    /*
+
     var auth = new FirebaseSimpleLogin(ref, function(error, user) {
       if (error) {
         // an error occurred while attempting login
         console.log(error);
       } else if (user) {
         // user authenticated with Firebase
-        $scope.user = user;
-        $scope.$apply();
+        $rootScope.user = user;
+        $rootScope.$apply();
       } else {
         // user is logged out
-        $scope.user = null;
+        $rootScope.user = null;
       }
     });
 
@@ -29,5 +29,4 @@ angular.module( 'albumPhotos.header', [
     $scope.logout = function() {
       auth.logout();
     };
-    */
 });

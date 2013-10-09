@@ -34,14 +34,14 @@ angular.module( 'albumPhotos.home', [
 /**
  * Home Controller
  */
-.controller( 'HomeCtrl', function HomeController( $scope, angularFire, $state ) {
+.controller( 'HomeCtrl', function HomeController( $scope, angularFire, $state, $rootScope ) {
   //FireBase initialization
   var ref = new Firebase("https://album-photos.firebaseio.com");
   currentId = $state.params.projectId;
   var loc = window.location.pathname;
 
   $scope.Math = window.Math;
-
+  console.log($rootScope.user)
   //Posible animations by random method
   var animations = ["flash", "bounce", "shake", " tada", "swing", "wobble", "pulse", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "lightSpeedIn", "rollIn"];
   $scope.animation = animations[Math.floor(animations.length * Math.random())];
@@ -79,4 +79,5 @@ angular.module( 'albumPhotos.home', [
         $scope.next = true;
       }
   };
+
 });

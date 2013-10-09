@@ -1,10 +1,10 @@
 <div class="photo-gallery">
-  <h1>{{album.album.name}}</h1>
+  <h1 class="photo-title"><wysiwyg item="album.album.name" disabled="{{user}}"></wysiwyg></h1>
   <div class="album-preview">
     <div class="album-photo" ng-class="{'animated {{animation}}': true}"> <img ng-src="{{WinUrl + currentPhoto.image}}" alt="{{currentPhoto.title}}"/></div>
     <a href="#/home/{{(Math.ceil(currentPhoto.id)-1)}}" ng-show="prev" class="btn-prev">Prev</a>
     <a href="#/home/{{(Math.ceil(currentPhoto.id)+1)}}" ng-show="next" class="btn-next">Next</a>
-    <p class="photo-description">Taken at the {{currentPhoto.title}} in {{currentPhoto.location}} on {{currentPhoto.date}}</p>
+    <p class="photo-description">Taken at the <span class="wysiwyg-medium"><wysiwyg item="currentPhoto.title"></wysiwyg></span> in <wysiwyg item="currentPhoto.location" disabled="{{user}}"> on <wysiwyg item="currentPhoto.date" disabled="{{user}}"></p>
   </div>
   <ul class="album-thumbnails">
     <li ng-repeat="photo in album.photos" ng-class="{selected:photo.selected}">

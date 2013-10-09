@@ -2,12 +2,21 @@
 
 Photo Gallery with a wysiwyg integrated in the administrator side. (Just login with any facebook account and edit text right in place).
 
+Demo: http://carlosvega.site44.com/album-photos/
+
 Solution to demonstrate good html/css/javascript coding practices (high performance  in mind) and the use of Git (Versioning Repository), AngularJs (Client-side MVC/MVVM), Restful service oriented architecture API (FireBase), Sass (css),NodeJS (Javascript server-side), Grunt (automation tasks), Bower (Dependency Management), Smacss (Scalable and modular Architecture for Css), modularizing the app code into logical modules, adding browsers history and running Unit tests with Jasmine and Karma.
 
-Working Demo: http://carlosvega.site44.com/album-photos/
-
-
 NOTE: I chose the most popular and my favorite new technologies, libraries and frameworks to resolve the evaluation. In the working process I use my own modified Agile Methodology with Pomodoro Technique to accomplish the evaluation in a short time frame.
+
+Git
+AngularJs
+Restful service API (Firebase)
+Sass
+NodeJs
+Grunt
+Bower
+Unit Test (Jasmine)
+Facebook API
 
 ## Why Angular.js?
 Dependency injection, Modules, directives, data binding, Unit Test. And because is new an made by Google.
@@ -22,7 +31,7 @@ Github for the raw code and sub versioning control, Firebase.com (Real-time Back
 Javascript Style guide: https://github.com/carlosvega20/javascript
 Css Style guide: https://github.com/carlosvega20/css-style-guide
 
-## Animation with http://daneden.me/animate/
+Animation with http://daneden.me/animate/
 
 
 ***

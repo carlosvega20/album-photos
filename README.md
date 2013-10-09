@@ -1,5 +1,7 @@
 # Album Photos
 
+Photo Gallery with a wysiwyg integrated in the administrator side. (Just login with any facebook account and edit text right in place).
+
 Solution to demonstrate good html/css/javascript coding practices (high performance  in mind) and the use of Git (Versioning Repository), AngularJs (Client-side MVC/MVVM), Restful service oriented architecture API (FireBase), Sass (css),NodeJS (Javascript server-side), Grunt (automation tasks), Bower (Dependency Management), Smacss (Scalable and modular Architecture for Css), modularizing the app code into logical modules, adding browsers history and running Unit tests with Jasmine and Karma.
 
 Working Demo: http://carlosvega.site44.com/album-photos/

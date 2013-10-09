@@ -1,0 +1,14 @@
+<div class="photo-gallery">
+  <h1>{{album.album.name}}</h1>
+  <div class="album-preview">
+    <div class="album-photo" ng-class="{'animated {{animation}}': true}"> <img ng-src="{{WinUrl + currentPhoto.image}}" alt="{{currentPhoto.title}}"/></div>
+    <a href="#/home/{{(Math.ceil(currentPhoto.id)-1)}}" ng-show="prev" class="btn-prev">Prev</a>
+    <a href="#/home/{{(Math.ceil(currentPhoto.id)+1)}}" ng-show="next" class="btn-next">Next</a>
+    <p class="photo-description">Taken at the {{currentPhoto.title}} in {{currentPhoto.location}} on {{currentPhoto.date}}</p>
+  </div>
+  <ul class="album-thumbnails">
+    <li ng-repeat="photo in album.photos" ng-class="{selected:photo.selected}">
+      <a href="#/home/{{photo.id}}"><img ng-src="{{WinUrl + photo.thumb_url}}" alt="{{photo.title}}"/></li></a>
+  </p>
+</div>
+

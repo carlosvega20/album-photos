@@ -12,7 +12,6 @@ angular.module( 'albumPhotos.header', [
     var auth = new FirebaseSimpleLogin(ref, function(error, user) {
       if (error) {
         // an error occurred while attempting login
-        console.log(error);
       } else if (user) {
         // user authenticated with Firebase
         $rootScope.user = user;

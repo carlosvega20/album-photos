@@ -41,7 +41,6 @@ angular.module( 'albumPhotos.home', [
   var loc = window.location.pathname;
 
   $scope.Math = window.Math;
-  console.log($rootScope.user)
   //Posible animations by random method
   var animations = ["flash", "bounce", "shake", " tada", "swing", "wobble", "pulse", "rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight", "lightSpeedIn", "rollIn"];
   $scope.animation = animations[Math.floor(animations.length * Math.random())];

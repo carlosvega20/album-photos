@@ -1,4 +1,4 @@
-# Album Photos
+# Album Photos.
 
 Photo Gallery with a wysiwyg integrated in the administrator side. (Just login with any facebook account and edit text right in place).
 
